@@ -6,7 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/@heroicons/react@1.0.5/dist/index.css" rel="stylesheet">
     @vite('resources/css/app.css')
     @vite('resources/css/output.css')
-    <title>Superadmin - Audit</title>
+    <title>{{ $page['title'] }}</title>
+
 </head>
 <body>
 
@@ -25,7 +26,7 @@
                 <span class="text-black text-base hidden md:block">All Job</span>
             </a>
             <a href="jobseeker-history" class=" flex items-center gap-3 px-4 py-2">
-                <img src="{{ asset('images/image-4.svg') }}" alt="history" />
+                <img src="{{ asset('images/image-6.svg') }}" alt="history" />
                 <span class="text-black text-base hidden md:block">Application History</span>
             </a>
 
