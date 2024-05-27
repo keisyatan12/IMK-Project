@@ -16,38 +16,7 @@
 
     <div class="flex gap-6 lg:gap-14 flex-row relative">
         {{-- sidebarr --}}
-        <div class="flex my-4 items-start">
-            <div class="w-28 md:w-80 sidebar h-auto bg-yellow-200 rounded-xl md:py-8 py-2 px-2 md:px-4 gap-4">
-                <a href="index.html" class="flex items-center gap-3 px-4 py-2">
-                    <img src="{{ ('images/image-3.svg') }}" class=" w-7 h-7" alt="home" />
-                    <span class="text-black text-base hidden md:block">Dashboard</span>
-                </a>
-                <a href="#" class="flex items-center gap-3 px-4 py-2">
-                    <img src="{{ ('images/calendar.png') }}" class=" w-7 h-7" alt="user management" />
-                    <span class="text-black text-base hidden md:block">Schedule</span>
-
-                    <a href="#" class="flex items-center  bg-yellow-300 gap-3 px-4 py-2">
-                        <img src="{{ ('images/cash-payment.png') }}" class=" w-7 h-7" alt="home" />
-                        <span class="text-black text-base hidden md:block">Payment</span>
-                    </a>
-
-                    <a href="#" class="flex items-center gap-3 px-4 py-2">
-                        <img src="{{ ('images/image-8.svg') }}" class=" w-7 h-7" alt="home" />
-                        <span class="text-black text-base hidden md:block">Profile</span>
-                    </a>
-
-                    <div class=" mt-40">
-                        <a href="#" class="flex items-center gap-3 px-4 py-2">
-                            <img src="{{ ('images/image-9.svg') }}" alt="user management" />
-                            <span class="text-black text-base hidden md:block">Log out</span>
-                        </a>
-                    </div>
-
-            </div>
-            <button id="sidebar-toggle" class="text-gray-700 mt-6 -ml-4 focus:outline-none">
-                <img src="{{ ('images/menu.svg') }}" alt="menu" class="w-12" />
-            </button>
-        </div>
+        @include('partials/sidebar')
 
         <div class="w-full my-4 mr-10 lg:mr-20 overflow-auto flex flex-col">
             <div class="my-4 w-full mr-10 md:mr-20 overflow-auto">
@@ -58,7 +27,7 @@
                     </div>
                     <button class="flex flex-col gap-2 items-center">
                         <div
-                            class="relative w-[181px] h-[41px] bg-[#439BB8] rounded-[16px] flex items-center justify-center">
+                            class="relative w-[181px] h-[41px] bg-[#439BB8]  hover:bg-[#2b697d] rounded-[16px] flex items-center justify-center">
                             <img src="{{('images/printing.png')}}" alt="" class="absolute left-2 top-2 w-7 h-7 ml-3">
                             <div
                                 class="absolute inset-0 flex items-center justify-end mr-6 text-white font-poppins font-semibold text-[17px] leading-[26px]">
