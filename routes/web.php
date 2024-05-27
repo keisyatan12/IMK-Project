@@ -65,3 +65,14 @@ Route::get('/tutorcriteriainboxdetail', function () {
     return view('/superadmin/tutor-criteria-inbox-detail');
 });
 
+Route::get('/tutordashboard', function () {
+    return view('/tutor/tutor-dashboard');
+});
+
+Route::get('/tutorschedule', function () {
+    return view('/tutor/tutor-schedule');
+});
+
+Route::get('/tutorpayment', function () {
+    return view('/tutor/tutor-payment');
+});
