@@ -85,15 +85,7 @@
 
                     <h2 class="mt-6 text-lg lg:text-xl font-semibold">Tutor Review</h2>
                 </div>
-                <div class="flex flex-col gap-2">
-                    <label for="role" class="text-sm lg:text-base">Filter by province</label>
-                    <select class="py-2 px-3 border border-yellow-500 text-black rounded-md bg-white" name="role" id="role">
-                        <option value="Admin">Sumatera Utara</option>
-                        <option value="Parents">Jawa tengah</option>
-                        <option value="Job seeker">Kalimantan</option>
-                        <option value="Superadmin">Bali</option>
-                    </select>
-                </div>
+                <h1 class="mt-6 text-lg lg:text-xl font-semibold">Sumatera Utara</h1>
             </div>
             <table class="mt-6 w-full">
               <thead class="bg-blue-800 rounded-xl border border-blue-800">
