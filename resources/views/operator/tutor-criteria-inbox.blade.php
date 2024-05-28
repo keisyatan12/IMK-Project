@@ -30,7 +30,7 @@
                 </a>
                 <ul class="ml-2 md:ml-14 py-3 flex flex-col gap-1 text-black">
                     <li class="py-2 px-4">
-                        <a href="tutor-list.html" class="text-xs md:text-base">Tutor list</a>
+                        <a href="tutor-list.html" class="text-xs md:text-base">Tutor Status</a>
                     </li>
                     <li class="py-2 px-4 bg-yellow-400 rounded-md">
                         <a href="tutor-criteria-inbox.html" class="text-xs md:text-base">Tutor criteria inbox</a>
