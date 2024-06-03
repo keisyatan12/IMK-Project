@@ -76,3 +76,7 @@ Route::get('/tutorschedule', function () {
 Route::get('/tutorpayment', function () {
     return view('/tutor/tutor-payment');
 });
+
+Route::get('/tutorprofile', function () {
+    return view('/tutor/tutor-profile');
+});

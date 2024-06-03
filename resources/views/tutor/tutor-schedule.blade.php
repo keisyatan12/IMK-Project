@@ -19,7 +19,16 @@
         @include('partials/sidebar')
 
         <div class="w-full my-4 mr-10 lg:mr-20 overflow-auto flex flex-col">
-            <h2 class="my-6 text-xl font-semibold">Tutor Schedule</h2>
+            <h1 class=" flex-col text-xl lg:text-3xl font-bold">Tutor Schedule</h1>
+            <button class=" flex justify-end mt-0 mb-4">
+                <div class="relative w-[181px] h-[41px] bg-[#439BB8]  hover:bg-[#2b697d] rounded-[16px] flex ">
+                    <img src="{{('images/printing.png')}}" alt="print" class="absolute left-2 top-2 w-7 h-7 ml-3">
+                    <div
+                        class="absolute inset-0 flex items-center justify-end mr-6 text-white font-poppins font-semibold text-[17px] leading-[26px]">
+                        Cetak Jadwal
+                    </div>
+                </div>
+            </button>
             <div class="flex justify-between items-center">
                 <p>May 2024</p>
                 <input type="date" class="border border-yellow-500 rounded-md bg-white text-black py-1 px-4">

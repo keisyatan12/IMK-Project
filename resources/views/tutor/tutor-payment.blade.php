@@ -25,16 +25,6 @@
                         <h1 class="text-xl lg:text-3xl font-bold">Payment</h1>
                         <p class="text-sm lg:text-base">You can check all payment status here</p>
                     </div>
-                    <button class="flex flex-col gap-2 items-center">
-                        <div
-                            class="relative w-[181px] h-[41px] bg-[#439BB8]  hover:bg-[#2b697d] rounded-[16px] flex items-center justify-center">
-                            <img src="{{('images/printing.png')}}" alt="" class="absolute left-2 top-2 w-7 h-7 ml-3">
-                            <div
-                                class="absolute inset-0 flex items-center justify-end mr-6 text-white font-poppins font-semibold text-[17px] leading-[26px]">
-                                Cetak Jadwal
-                            </div>
-                        </div>
-                    </button>
 
                 </div>
                 <table class="mt-6 w-full">
@@ -94,6 +84,7 @@
                         </tr>
                     </tbody>
                 </table>
+
                 <div class="flex justify-between gap-3 md:items-center md:flex-row flex-col mt-6">
                     <div>
                         <label for="role">Rows per page</label>
@@ -110,42 +101,6 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="flex justify-center gap-16 items-center md:flex-row">
-                <div class="flex flex-col gap-2">
-                    <h1 class="text-4xl lg:text-4xl font-bold">Selamat Datang Rekan Tutor</h1>
-                    <h1 class="text-4xl lg:text-4xl font-bold">John Doe</h1>
-                    <p class="text-sm font-bold lg:text-base mt-4">Kami di sini berperan sebagai perantara orang tua dan
-                        guru privat
-                    </p>
-                </div>
-                <div class="flex gap-2">
-                    <img class=" w-[396px]" src="{{ ('images/tutor.jpeg') }}" alt="" />
-                </div>
-            </div>
-            <div class="flex justify-center items-center gap-3 py-3">
-                <div
-                    class="flex flex-row items-center justify-center gap-36 w-[1211px] h-auto top-[519px] bg-[#FFFDF0] border-2 border-[#00BFFF] rounded-[42px] py-4">
-                    <div
-                        class="flex flex-col items-center w-[184px] h-auto bg-[#FFDC5F] border border-[#F5C400] shadow-[7px_7px_30px_rgba(0,0,0,0.25)] rounded-[14px] p-4">
-                        <img src="{{('images/teacher.png')}}" alt="teacher" class=" w-auto h-[100px] object-contain">
-                        <p class="text-center text-black text-2xl font-bold">123</p>
-                        <p class="mt-2 text-center font-sans font-bold">Teacher</p>
-                    </div>
-                    <div
-                        class="flex flex-col items-center w-[184px] h-auto bg-[#FFDC5F] border border-[#F5C400] shadow-[7px_7px_30px_rgba(0,0,0,0.25)] rounded-[14px] p-4">
-                        <img src="{{('images/books.png')}}" alt="books" class="w-auto h-[100px] object-contain">
-                        <p class="text-center text-black text-2xl font-bold">123</p>
-                        <p class="mt-2 text-center font-sans font-bold">Books</p>
-                    </div>
-                    <div
-                        class="flex flex-col items-center w-[184px] h-auto bg-[#FFDC5F] border border-[#F5C400] shadow-[7px_7px_30px_rgba(0,0,0,0.25)] rounded-[14px] p-4">
-                        <img src="{{('images/reading.png')}}" alt="reading" class="w-auto h-[100px] object-contain">
-                        <p class="text-center text-black text-2xl font-bold">123</p>
-                        <p class="mt-2 text-center font-sans font-bold">Reading</p>
-                    </div>
-                </div>
-
-            </div> --}}
 
         </div>
     </div>

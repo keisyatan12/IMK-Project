@@ -28,7 +28,7 @@
                     </p>
                 </div>
                 <div class="flex gap-2">
-                    <img class=" w-[600px]" src="{{ ('images/tutor.png') }}" alt="" />
+                    <img class=" w-[500px]" src="{{ ('images/tutor.png') }}" alt="" />
                 </div>
             </div>
             <div class="flex justify-center items-center gap-3 py-3">
