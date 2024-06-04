@@ -80,3 +80,7 @@ Route::get('/tutorpayment', function () {
 Route::get('/tutorprofile', function () {
     return view('/tutor/tutor-profile');
 });
+
+Route::get('/tutorprofileedit', function () {
+    return view('/tutor/tutor-profile-edit');
+});
