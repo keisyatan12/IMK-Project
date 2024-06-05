@@ -35,6 +35,12 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
+
+                $modules=["JobSeeker"];
+                foreach($modules as $key=>$module)  {
+                    Route::middleware('web')
+                    ->group(base_path('app/Modules/'.$module.'/Routes/web.php'));
+                }
         });
     }
 }
