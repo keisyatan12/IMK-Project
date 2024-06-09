@@ -14,11 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::get('/', function () {
+Route::get('/landingpage', function () {
     return view('landingpage');
 });
 
+Route::get('/jobdashboard', function () {
+    return view('/JobSeeker/jobseeker-dashboard');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -30,3 +32,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+require __DIR__.'/auth.php';
