@@ -65,7 +65,7 @@
                     {{-- card --}}
                     <div class="flex flex-col gap-4 p-4 rounded-lg bg-white drop-shadow-lg ">
                         <span>
-                            <img src="{{asset('images/tutor.jpeg')}}" alt="karir-1" height="25%">
+                            <img src="{{asset('images/tutor.png')}}" alt="karir-1" height="25%">
                         </span>
                         <span>
                             <p class="font-bold text-lg">Matematic for 3 SMP</p>
