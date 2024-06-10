@@ -20,9 +20,9 @@
         </a>
     </div>
     <button id="sidebar-toggle" class="text-gray-700 mt-6 -ml-4 focus:outline-none">
-      <img src="{{ asset('images/menu.svg') }}" alt="menu" class="w-12" />
+        <img src="{{ asset('images/menu.svg') }}" alt="menu" class="w-12" />
     </button>
     <script>
-        
+
     </script>
 </div>

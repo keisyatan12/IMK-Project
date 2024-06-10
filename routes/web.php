@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,66 +14,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/landingpage', function () {
+    return view('landingpage');
 });
 
-Route::get('/audit', function () {
-    return view('/superadmin/audit-logs');
+Route::get('/jobdashboard', function () {
+    return view('/JobSeeker/jobseeker-dashboard');
 });
 
-Route::get('/superadmin-dashboard', function () {
-    return view('/superadmin/dashboard');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/paymentparent', function () {
-    return view('/superadmin/payment-from-parent');
-});
-
-Route::get('/paymentoperator', function () {
-    return view('/superadmin/payment-for-operator');
-});
-
-Route::get('/paymentoperatorhistory', function () {
-    return view('/superadmin/payment-for-operator-history');
-});
-
-Route::get('/paymentoperatordetail', function () {
-    return view('/superadmin/payment-for-operator-detail');
-});
-
-Route::get('/tutorlist', function () {
-    return view('/superadmin/tutor-list');
-});
-
-Route::get('/tutorlistdetail', function () {
-    return view('/superadmin/tutor-list-detail');
-});
-
-Route::get('/tutorreview', function () {
-    return view('/superadmin/tutor-review');
-});
-
-Route::get('/tutorreviewdetail', function () {
-    return view('/superadmin/tutor-review-detail');
-});
-
-Route::get('/tutorcriteriainbox', function () {
-    return view('/superadmin/tutor-criteria-inbox');
-});
-
-Route::get('/tutorcriteriainboxdetail', function () {
-    return view('/superadmin/tutor-criteria-inbox-detail');
-});
-
-Route::get('/tutordashboard', function () {
-    return view('/tutor/tutor-dashboard');
-});
-
-Route::get('/tutorschedule', function () {
-    return view('/tutor/tutor-schedule');
-});
-
-Route::get('/tutorpayment', function () {
-    return view('/tutor/tutor-payment');
-});
+require __DIR__.'/auth.php';
