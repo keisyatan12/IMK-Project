@@ -14,7 +14,7 @@ class JobSeekerController extends Controller
         ];
 
         $props = compact('page');
-        return view('JobSeeker.jobseeker-dashboard');
+        return view('JobSeeker.jobseeker-dashboard' , $props);
     }
     public function alljob()
     {
@@ -32,6 +32,15 @@ class JobSeekerController extends Controller
         ];
 
         $props = compact('page');
-        return view('JobSeeker.jobseeker-history');
+        return view('JobSeeker.jobseeker-history' , $props);
+    }
+    public function profil()
+    {
+        $page = [
+            'title' => 'JobSeeker - Profil',
+        ];
+
+        $props = compact('page');
+        return view('JobSeeker.jobseeker-profil' , $props);
     }
 }
