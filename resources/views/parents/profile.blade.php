@@ -2,14 +2,15 @@
 
 @section('content')
 
-<div class="flex gap-6 lg:gap-14 flex-row relative">
+<div class="flex gap-6 lg:gap-14 flex-row relative min-h-screen">
 
     <!-- CONTENT -->
-    <div class="my-4 px-4 w-full mr-10 lg:mr-20 overflow-auto">
+    <div class="my-8 px-4 w-full mr-10 lg:mr-20 overflow-auto">
         <div class="flex justify-between gap-3 md:items-end md:flex-row flex-col">
             <div>
                 <h1 class="text-xl lg:text-3xl font-bold">Orang Tua Naufal</h1>
-                <p class="text-sm lg:text-base">Edit info</p>
+                <a href="{{ route('parentsedit') }}" class="text-sm lg:text-base" style="color: blue">Edit info</a>
+                <a href="{{ route('parentspassword') }}" class="text-sm lg:text-base px-9" style="color: blue">Edit Password</a>
             </div>
         </div>
 
@@ -37,5 +38,11 @@
     </div>
 
 </div>
+
+<style>
+    .min-h-screen {
+        min-height: 70vh; /* Mengatur tinggi minimum menjadi 100% dari tinggi viewport */
+    }
+</style>
 
 @endsection

@@ -54,12 +54,17 @@ Route::get('/paymenthistory', function () {
 Route::get('/parentsprofile', function () {
     return view('parents.profile');
 });
+
+// Rute untuk menampilkan halaman edit profile
 Route::get('/parentsedit', function () {
     return view('parents.edit-profile');
-});
+})->name('parentsedit');
+
+// Rute untuk menampilkan halaman edit password
 Route::get('/parentspassword', function () {
     return view('parents.edit-password');
-});
+
+})->name('parentspassword');
 Route::get('/jobseekerprofile', function () {
     return view('jobseeker.profile');
 });

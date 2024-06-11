@@ -10,7 +10,7 @@
         <div class="flex flex-col gap-4 py-3">
             <div class="bg-yellow-100 w-1/2 mx-auto py-3 flex justify-center gap-4 rounded-lg">
                 <span>
-                    <a href="#" class="font-semibold p-3">Pembayaran</a>
+                    <a href="parentspayment" class="font-semibold p-3">Pembayaran</a>
                 </span>
                 <span>
                     <a href="#" class="underline font-semibold p-3">Cek Status Pembayaran</a>
