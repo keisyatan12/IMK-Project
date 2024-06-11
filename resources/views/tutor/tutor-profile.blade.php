@@ -68,43 +68,10 @@
             <p>Institut Teknologi Balige</p>
             <p>2001 - 2003</p>
             <button
-                class="relative w-[181px] h-[41px] bg-[#65ADC5] hover:bg-[#34829c] hover:shadow-none shadow-md shadow-[#34829c] text-black hover:text-white rounded-full flex items-center justify-center">
+                class="relative w-[181px] h-[30px] bg-[#65ADC5] hover:bg-[#34829c] hover:shadow-none shadow-md shadow-[#34829c] text-black hover:text-white rounded-full flex items-center justify-center">
                 <span class="font-semibold text-lg ">Buka Disini</span>
             </button>
             <p>Menjadi Nahkoda di OPM</p>
-        </div>
-    </div>
-    <div class="flex mt-9">
-        <p class="font-bold text-2xl">Pengalaman Kerja</p>
-    </div>
-    <div class="flex mt-3 w-full">
-        <div class="flex flex-col gap-4 text-lg font-sans min-w-64">
-            <p>Perusahaan</p>
-            <p>Tipe</p>
-            <p>Posisi</p>
-            <p>Tipe Kerja</p>
-            <p>Mulai-Akhir</p>
-            <p>Deskripsi</p>
-        </div>
-        <div class="flex flex-col gap-4 mr-5 text-lg font-sans">
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-        </div>
-        <div class="flex flex-col gap-4 mr-5 text-lg font-sans">
-            <p>Auschwitz Kampf</p>
-            <p>Internship</p>
-            <p>asdfasdfasdf</p>
-            <p>Engineer Lan Cable</p>
-            <p>2002-2003</p>
-            <p>Mengambil segala tindakan untuk pemulihan
-                keamanan dan ketenangan, serta kestabilan jalannya
-                pemerintahan dan revolusi, menjamin keselamatan dan kewibawaan pimpinan negara, dan
-                melaksanakan
-                pasti ajaran pemimpin besar revolusi.</p>
         </div>
     </div>
 </div>

@@ -18,94 +18,7 @@
             <img src="{{('images/camera.png')}}" alt="camera" class=" w-9/12 h-9/12 object-cover">
         </label>
     </div>
-    {{-- <div class="flex mt-9 w-full">
-        <div class="flex flex-col gap-4 text-lg font-sans min-w-64">
-            <p>Nama</p>
-            <p>Tanggal Lahir</p>
-            <p>Nomor Telepon</p>
-            <p>Email</p>
-            <p>Domisili</p>
-            <p>Pendidikan Terakhir</p>
-        </div>
-        <div class="flex flex-col gap-4 mr-5 text-lg font-sans">
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-        </div>
-        <div class="flex flex-col gap-4 mr-5 text-lg font-sans">
-            <p>John Doe</p>
-            <p>9 November 2001</p>
-            <p>081234567890</p>
-            <p>johndoe911@gmail.com</p>
-            <p>Balige</p>
-            <p>Taman Kanak-kanak</p>
-        </div>
-    </div>
-    <div class="flex mt-9">
-        <p class="font-bold text-2xl">Curriculum Vitae</p>
-    </div>
-    <div class="flex mt-3 w-full">
-        <div class="flex flex-col gap-4 text-lg font-sans min-w-64">
-            <p>Tingkat Pendidikan</p>
-            <p>Sekolah/Almamater</p>
-            <p>Lulus</p>
-            <p>Curriculum Vitae</p>
-            <p>Pengalaman Organisasi</p>
-        </div>
-        <div class="flex flex-col gap-4 mr-5 text-lg font-sans">
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-        </div>
-        <div class="flex flex-col gap-4 mr-5 text-lg font-sans">
-            <p>Bachelor of Mobile Gaming</p>
-            <p>Institut Teknologi Balige</p>
-            <p>2001 - 2003</p>
-            <button
-                class="relative w-[181px] h-[41px] bg-[#65ADC5] hover:bg-[#34829c] hover:shadow-none shadow-md shadow-[#34829c] text-black hover:text-white rounded-full flex items-center justify-center">
-                <span class="font-semibold text-lg ">Buka Disini</span>
-            </button>
-            <p>Menjadi Nahkoda di OPM</p>
-        </div>
-    </div>
-    <div class="flex mt-9">
-        <p class="font-bold text-2xl">Pengalaman Kerja</p>
-    </div> --}}
-    {{-- <div class="flex mt-3 w-full">
-        <div class="flex flex-col gap-4 text-lg font-sans min-w-64">
-            <p>Perusahaan</p>
-            <p>Tipe</p>
-            <p>Posisi</p>
-            <p>Tipe Kerja</p>
-            <p>Mulai-Akhir</p>
-            <p>Deskripsi</p>
-        </div>
-        <div class="flex flex-col gap-4 mr-5 text-lg font-sans">
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-            <p>:</p>
-        </div>
-        <div class="flex flex-col gap-4 mr-5 text-lg font-sans">
-            <p>Auschwitz Kampf</p>
-            <p>Internship</p>
-            <p>asdfasdfasdf</p>
-            <p>Engineer Lan Cable</p>
-            <p>2002-2003</p>
-            <p>Mengambil segala tindakan untuk pemulihan
-                keamanan dan ketenangan, serta kestabilan jalannya
-                pemerintahan dan revolusi, menjamin keselamatan dan kewibawaan pimpinan negara, dan
-                melaksanakan
-                pasti ajaran pemimpin besar revolusi.</p>
-        </div>
-    </div> --}}
+
     <form>
         <div class="space-y-12">
             <div class="border-b border-gray-900/10 pb-12">
@@ -204,8 +117,7 @@
                         </div>
                     </div>
                     <div class="sm:col-span-4">
-                        <label for="cv" class="block text-sm font-medium leading-6">Pengalaman
-                            Curriculum Vitae</label>
+                        <label for="cv" class="block text-sm font-medium leading-6">Curriculum Vitae</label>
                         <div class="mt-2">
                             <input type="file" name="cv" id="cv" autocomplete="cv"
                                 class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
