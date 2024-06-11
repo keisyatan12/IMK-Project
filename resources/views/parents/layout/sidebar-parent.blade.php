@@ -92,4 +92,12 @@ document.addEventListener('DOMContentLoaded', function () {
         profileMenuParent.classList.toggle('hidden');
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+        const tutorButtonParent = document.getElementById('tutor-button-parent');
+        const tutorMenuParent = document.getElementById('tutor-menu-parent');
+
+        tutorButtonParent.addEventListener('click', function () {
+            tutorMenuParent.classList.toggle('hidden');
+        });
+});
     </script>
