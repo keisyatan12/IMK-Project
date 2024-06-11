@@ -60,4 +60,24 @@ Route::get('/jobseekerpassword', function () {
     return view('JobSeeker/edit-password');
 });
 
+// Parents
+
+Route::get('/dashboard-parents', function(){
+    return view('/parents/dashboard-parents');
+});
+Route::get('/tutor-applicants-parents', function(){
+    return view('/parents/tutor-applicants-parent');
+});
+Route::get('/find-tutor-parent', function(){
+    return view('/parents/find-tutor-parent');
+});
+Route::get('/tutor-review-parent', function(){
+    return view('/parents/tutor-review-parent');
+});
+Route::get('/tutor-review-parent-tambahlowongan', function(){
+    return view('/parents/find-tutor-parent-form');
+});
+
+
 require __DIR__.'/auth.php';
+

@@ -11,21 +11,58 @@ menuButton.addEventListener('click', function() {
   dropdownMenuProfile.classList.toggle('hidden');
 });
 
-const sidebarToggle = document.getElementById('sidebar-toggle');
-  const sidebar = document.querySelector('.sidebar');
+// const sidebarToggle = document.getElementById('sidebar-toggle');
+//   const sidebar = document.querySelector('.sidebar');
 
-  sidebarToggle.addEventListener('click', function() {
-    sidebar.classList.toggle('hidden');
-  }
-);
+//   sidebarToggle.addEventListener('click', function() {
+//     sidebar.classList.toggle('hidden');
+//   }
+// );
+
+const sidebarToggleParent = document.getElementById('sidebar-toggle-parent');
+const sidebarParent = document.getElementById('sidebar-parent');
+const mainContentParent = document.getElementById('main-content');
+const navbarBurger = document.getElementById('navbar-burger');
+const navbarBurgerclose = document.getElementById('navbar-burger-close');
+const navbarMenu = document.getElementById('navbar-menu');
+
+navbarBurger.addEventListener('click', function(){
+    navbarMenu.classList.toggle('-translate-y-full')
+});
+navbarBurgerclose.addEventListener('click', function(){
+    navbarMenu.classList.toggle('-translate-y-full')
+});
+    
+sidebarToggleParent.addEventListener('click', function(){
+    sidebarToggleParent.classList.toggle('-translate-x-64');
+    sidebarParent.classList.toggle('-translate-x-full'); 
+    mainContentParent.classList.toggle('md:-ml-72');
+    sidebarToggleParent.classList.toggle('-ml-4');
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const dropdownToggle = document.querySelector('.dropdown-toggle');
   const dropdownMenu = document.querySelector('.dropdown-menu');
-  dropdownToggle.addEventListener('click', () => {
-    dropdownMenu.classList.toggle('show');
-    dropdownToggle.querySelector('svg').classList.toggle('rotate-180');
-  });
+  const tutorButtonParent = document.getElementById('tutor-button-parent');
+  const tutorMenuParent = document.getElementById('tutor-menu-parent');
+  
+  
+  //Parent
+  tutorButtonParent.addEventListener('click', () => {
+      tutorMenuParent.classList.toggle('hidden');
+      
+    });
+    
+    if (window.location.pathname.includes('tutor-applicants-parents') || window.location.pathname.includes('find-tutor-parent') ||
+    window.location.pathname.includes('tutor-review')) {
+        document.getElementById('tutor-menu-parent').classList.remove('hidden');
+    }
+    
+    dropdownToggle.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('show');
+      dropdownToggle.querySelector('svg').classList.toggle('rotate-180');
+    });
+    
 });
 
      // Function to generate the calendar for a specific month and year
