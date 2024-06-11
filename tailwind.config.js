@@ -3,7 +3,8 @@ export default {
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
-    "./resources/**/**.vue"
+    "./resources/**/**.vue",
+    "./public/script.js",
   ],
   theme: {
     extend: {
@@ -14,4 +15,3 @@ export default {
   },
   plugins: [],
 }
-
