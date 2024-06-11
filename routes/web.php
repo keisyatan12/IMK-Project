@@ -48,12 +48,12 @@ Route::get('/parentspassword', function () {
     return view('parents/edit-password');
 });
 Route::get('/jobseekerprofile', function () {
-    return view('Job-Seeker/profile');
+    return view('jobeeker/profile');
 });
 Route::get('/jobseekeredit', function () {
-    return view('Job-Seeker/edit-profile');
+    return view('jobseeker/edit-profile');
 });
 Route::get('/jobseekerpassword', function () {
-    return view('JobSeeker/edit-password');
+    return view('jobseeker/edit-password');
 });
 
