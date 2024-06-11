@@ -19,8 +19,10 @@ Route::get('/', function () {
 });
 
 
-Route::get('/jobseeker-dashboard', [JobSeekerController::class, 'index'])->name('JobSeeker.index');
+Route::get('/jobseeker/dashboard', [JobSeekerController::class, 'index'])->name('JobSeeker.index');
 
-Route::get('/jobseeker-alljob', [JobSeekerController::class, 'alljob'])->name('JobSeeker.alljob');
+Route::get('/jobseeker/alljob', [JobSeekerController::class, 'alljob'])->name('JobSeeker.alljob');
 
-Route::get('/jobseeker-history', [JobSeekerController::class, 'history'])->name('JobSeeker.history');
+Route::get('/jobseeker/history', [JobSeekerController::class, 'history'])->name('JobSeeker.history');
+
+Route::get('/jobseeker/profil', [JobSeekerController::class, 'profil'])->name('JobSeeker.profil');

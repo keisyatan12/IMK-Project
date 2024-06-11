@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/@heroicons/react@1.0.5/dist/index.css" rel="stylesheet">
     @vite('resources/css/app.css')
     @vite('resources/css/output.css')
-    <title>{{ $page['title'] }}</title>
+    <title>tes</title>
 
 </head>
 <body>
@@ -17,20 +17,20 @@
     <div class="flex my-4 items-start">
         {{-- INI SIDEBAR --}}
         <div class="w-28 md:w-80 sidebar h-full bg-yellow-200 rounded-xl md:py-8 py-2 px-2 md:px-4 gap-4">
-            <a href="jobseeker-dashboard" class="bg-yellow-300 flex items-center gap-3 px-4 py-2">
+            <a href={{route('JobSeeker.index')}} class="bg-yellow-300 flex items-center gap-3 px-4 py-2">
                 <img src="{{ asset('images/image-3.svg') }}" alt="dashboard" />
                 <span class="text-black text-base hidden md:block">Dashboard</span>
             </a>
-            <a href="jobseeker-alljob" class=" flex items-center gap-3 px-4 py-2">
+            <a href={{route('JobSeeker.alljob')}} class=" flex items-center gap-3 px-4 py-2">
                 <img src="{{ asset('images/image-4.svg') }}" alt="AllJob" />
                 <span class="text-black text-base hidden md:block">All Job</span>
             </a>
-            <a href="jobseeker-history" class=" flex items-center gap-3 px-4 py-2">
+            <a href={{route('JobSeeker.history')}} class=" flex items-center gap-3 px-4 py-2">
                 <img src="{{ asset('images/image-6.svg') }}" alt="history" />
                 <span class="text-black text-base hidden md:block">Application History</span>
             </a>
 
-            <a href="#" class="flex items-center gap-3 px-4 py-2">
+            <a href={{route('JobSeeker.profil')}} class="flex items-center gap-3 px-4 py-2">
                 <img src="{{ asset('images/image-8.svg') }}" alt="home" />
                 <span class="text-black text-base hidden md:block">Profile</span>
             </a>
