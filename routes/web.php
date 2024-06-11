@@ -36,28 +36,28 @@ Route::middleware('auth')->group(function () {
 
 //naufal
 Route::get('/parentspayment', function () {
-    return view('parents/payment');
+    return view('parents.payment');
 });
 Route::get('/paymenthistory', function () {
-    return view('parents/payment-history');
+    return view('parents.payment-history');
 });
 Route::get('/parentsprofile', function () {
-    return view('parents/profile');
+    return view('parents.profile');
 });
 Route::get('/parentsedit', function () {
-    return view('parents/edit-profile');
+    return view('parents.edit-profile');
 });
 Route::get('/parentspassword', function () {
-    return view('parents/edit-password');
+    return view('parents.edit-password');
 });
 Route::get('/jobseekerprofile', function () {
-    return view('Job-Seeker/profile');
+    return view('jobseeker.profile');
 });
 Route::get('/jobseekeredit', function () {
-    return view('Job-Seeker/edit-profile');
+    return view('jobseeker.edit-profile');
 });
 Route::get('/jobseekerpassword', function () {
-    return view('JobSeeker/edit-password');
+    return view('jobseeker.edit-password');
 });
 
 require __DIR__.'/auth.php';
