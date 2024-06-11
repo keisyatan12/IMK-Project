@@ -44,7 +44,7 @@
             <div class="w-96 flex flex-col gap-3">
                 <h4 class="font-semibold">Upload Bukti Pembayaran</h4>
 
-                <form action="" method="post">
+                <form action="{{ 'parentspayment' }}" method="POST">
                     <div class="flex flex-col gap-3 bg-yellow-50 p-4 rounded-2xl">
 
                         <div class="relative w-full h-36 rounded-2xl overflow-hidden bg-gray-200 flex items-center justify-center cursor-pointer">
@@ -69,8 +69,11 @@
                             <label for="">Nomor Rekening</label>
                             <input class="border border-black py-1 px-2 rounded-lg"type="text" name="" id="">
                         </div>
+                            @csrf
+                            <!-- Input fields for payment confirmation -->
+                            <button type="submit" class="bg-orange-500 py-2 rounded-2xl text-white font-semibold">Konfirmasi Pembayaran</button>
+                        </form>
 
-                        <button class="bg-orange-500 py-2 rounded-2xl text-white font-semibold">Konfirmasi Pembayaran</button>
 
 
                     </div>
@@ -84,4 +87,5 @@
     </div>
 
 </div>
+
 @endsection
