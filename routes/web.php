@@ -78,6 +78,44 @@ Route::get('/tutor-review-parent-tambahlowongan', function(){
     return view('/parents/find-tutor-parent-form');
 });
 
+//operator
+Route::get('/operator-tutor-review', function(){
+    return view('/operator/operator-tutor-review');
+});
+
+Route::get('/operator-tutor-review-detail', function(){
+    return view('/operator/operator-tutor-review-detail');
+});
+
+Route::get('/operator-tutor-status', function(){
+    return view('/operator/operator-tutor-status');
+});
+
+Route::get('/operator-tutor-status-detail', function(){
+    return view('/operator/operator-tutor-status-detail');
+});
+
+Route::get('/operator-tutor-criteria-inbox', function(){
+    return view('/operator/operator-tutor-criteria-inbox');
+});
+
+Route::get('/operator-tutor-criteria-inbox-detail', function(){
+    return view('/operator/operator-tutor-criteria-inbox-detail');
+});
+
+Route::get('/operator-payment-history', function(){
+    return view('/operator/operator-payment-history');
+});
+
+Route::get('/operator-payment', function(){
+    return view('/operator/operator-payment');
+});
+
+
+
+
+
+
 
 require __DIR__.'/auth.php';
 
