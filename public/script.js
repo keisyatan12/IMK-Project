@@ -32,10 +32,10 @@ navbarBurger.addEventListener('click', function(){
 navbarBurgerclose.addEventListener('click', function(){
     navbarMenu.classList.toggle('-translate-y-full')
 });
-    
+
 sidebarToggleParent.addEventListener('click', function(){
     sidebarToggleParent.classList.toggle('-translate-x-64');
-    sidebarParent.classList.toggle('-translate-x-full'); 
+    sidebarParent.classList.toggle('-translate-x-full');
     mainContentParent.classList.toggle('md:-ml-72');
     sidebarToggleParent.classList.toggle('-ml-4');
 });
@@ -45,42 +45,42 @@ document.addEventListener('DOMContentLoaded', () => {
   const dropdownMenu = document.querySelector('.dropdown-menu');
   const tutorButtonParent = document.getElementById('tutor-button-parent');
   const tutorMenuParent = document.getElementById('tutor-menu-parent');
-  
-  
+
+
   //Parent
   tutorButtonParent.addEventListener('click', () => {
       tutorMenuParent.classList.toggle('hidden');
-      
+
     });
-    
+
     if (window.location.pathname.includes('tutor-applicants-parents') || window.location.pathname.includes('find-tutor-parent') ||
     window.location.pathname.includes('tutor-review')) {
         document.getElementById('tutor-menu-parent').classList.remove('hidden');
     }
-    
+
     dropdownToggle.addEventListener('click', () => {
       dropdownMenu.classList.toggle('show');
       dropdownToggle.querySelector('svg').classList.toggle('rotate-180');
     });
-    
+
 });
 
      // Function to generate the calendar for a specific month and year
 function generateCalendar(year, month) {
     const calendarElement = document.getElementById('calendar');
     const currentMonthElement = document.getElementById('currentMonth');
-    
+
     // Create a date object for the first day of the specified month
     const firstDayOfMonth = new Date(year, month, 1);
     const daysInMonth = new Date(year, month + 1, 0).getDate();
-    
+
     // Clear the calendar
     calendarElement.innerHTML = '';
 
     // Set the current month text
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     currentMonthElement.innerText = `${monthNames[month]} ${year}`;
-    
+
     // Calculate the day of the week for the first day of the month (0 - Sunday, 1 - Monday, ..., 6 - Saturday)
     const firstDayOfWeek = firstDayOfMonth.getDay();
 

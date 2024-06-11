@@ -19,7 +19,7 @@
     </div>
     <button id="sidebar-toggle-parent" class="text-gray-700 transition mt-6 focus:outline-none">
       <img src="{{ asset('images/menu.svg') }}" alt="menu" class="w-12"/>
-    </button> 
+    </button>
 </div> --}}
 
 <div class="flex my-4 items-start">
@@ -39,14 +39,26 @@
                 <a href="tutor-review-parent" class="text-black hover:bg-yellow-100 p-2 rounded-md {{request()->is('tutor-review-parent') ? 'bg-yellow-100' : ''}}">Tutor Review</a>
             </div>
         </div>
-        <a href="jobseeker-alljob" class=" flex items-center gap-3 px-4 py-2 hover:bg-yellow-100 rounded-md">
-            <img src="{{ asset('images/image-7.svg') }}" alt="user management" />
-            <span class="text-black text-base hidden md:block">Pembayaran</span>
-        </a>
-        <a href="#" class="flex items-center gap-3 px-4 py-2 hover:bg-yellow-100 rounded-md">
-            <img src="{{ asset('images/image-8.svg') }}" alt="home " />
-            <span class="text-black text-base hidden md:block">Profile</span>
-        </a>
+        <div class="relative">
+            <div id="payment-button-parent" class="flex items-center gap-3 px-4 py-2 hover:bg-yellow-100 rounded-md cursor-pointer">
+                <img src="{{ asset('images/image-7.svg') }}" alt="payment history" />
+                <span class="text-black text-base hidden md:block">Payment</span>
+            </div>
+            <div id="payment-menu-parent" class="hidden md:flex flex-col ml-7 space-y-2 rounded p-4">
+                <a href="parentspayment" class="text-black hover:bg-yellow-100 p-2 rounded-md {{request()->is('parentspayment') ? 'bg-yellow-100' : ''}}">Pembayaran</a>
+                <a href="paymenthistory" class="text-black hover:bg-yellow-100 p-2 rounded-md {{request()->is('paymenthistory') ? 'bg-yellow-100' : ''}}">Payment History</a>
+            </div>
+        </div>
+        <div class="relative">
+            <div id="profile-button-parent" class="flex items-center gap-3 px-4 py-2 hover:bg-yellow-100 rounded-md cursor-pointer">
+                <img src="{{ asset('images/image-8.svg') }}" alt="profile" />
+                <span class="text-black text-base hidden md:block">Profile</span>
+            </div>
+            <div id="profile-menu-parent" class="hidden md:flex flex-col ml-7 space-y-2 rounded p-4">
+                <a href="parentsedit" class="text-black hover:bg-yellow-100 p-2 rounded-md {{request()->is('parentsedit') ? 'bg-yellow-100' : ''}}">Edit Profile</a>
+                <a href="parentspassword" class="text-black hover:bg-yellow-100 p-2 rounded-md {{request()->is('parentspassword') ? 'bg-yellow-100' : ''}}">Edit Password</a>
+            </div>
+        </div>
         <a href="#" class="flex items-center gap-3 px-4 py-2 hover:bg-yellow-100 rounded-md">
             <img src="{{ asset('images/image-9.svg') }}" alt="user management" />
             <span class="text-black text-base hidden md:block">Log out</span>
@@ -56,3 +68,28 @@
       <img src="{{ asset('images/menu.svg') }}" alt="menu" class="w-12" />
     </button>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const tutorButtonParent = document.getElementById('tutor-button-parent');
+    const tutorMenuParent = document.getElementById('tutor-menu-parent');
+
+    tutorButtonParent.addEventListener('click', function () {
+        tutorMenuParent.classList.toggle('hidden');
+    });
+
+    const paymentButtonParent = document.getElementById('payment-button-parent');
+    const paymentMenuParent = document.getElementById('payment-menu-parent');
+
+    paymentButtonParent.addEventListener('click', function () {
+        paymentMenuParent.classList.toggle('hidden');
+    });
+
+    const profileButtonParent = document.getElementById('profile-button-parent');
+    const profileMenuParent = document.getElementById('profile-menu-parent');
+
+    profileButtonParent.addEventListener('click', function () {
+        profileMenuParent.classList.toggle('hidden');
+    });
+});
+    </script>
