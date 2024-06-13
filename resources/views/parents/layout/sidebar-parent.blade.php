@@ -68,36 +68,3 @@
       <img src="{{ asset('images/menu.svg') }}" alt="menu" class="w-12" />
     </button>
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const tutorButtonParent = document.getElementById('tutor-button-parent');
-    const tutorMenuParent = document.getElementById('tutor-menu-parent');
-
-    tutorButtonParent.addEventListener('click', function () {
-        tutorMenuParent.classList.toggle('hidden');
-    });
-
-    const paymentButtonParent = document.getElementById('payment-button-parent');
-    const paymentMenuParent = document.getElementById('payment-menu-parent');
-
-    paymentButtonParent.addEventListener('click', function () {
-        paymentMenuParent.classList.toggle('hidden');
-    });
-
-    const profileButtonParent = document.getElementById('profile-button-parent');
-    const profileMenuParent = document.getElementById('profile-menu-parent');
-
-    profileButtonParent.addEventListener('click', function () {
-        profileMenuParent.classList.toggle('hidden');
-    });
-});
-document.addEventListener('DOMContentLoaded', function () {
-        const tutorButtonParent = document.getElementById('tutor-button-parent');
-        const tutorMenuParent = document.getElementById('tutor-menu-parent');
-
-        tutorButtonParent.addEventListener('click', function () {
-            tutorMenuParent.classList.toggle('hidden');
-        });
-});
-    </script>

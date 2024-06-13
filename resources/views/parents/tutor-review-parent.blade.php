@@ -10,7 +10,7 @@
         <p class="text-sm lg:text-base">Berikan Penilaian kepada tutor dengan menekan tombol berikan review</p>
         <h2 class="mt-6 text-lg lg:text-xl font-semibold">List Tutor</h2>
     </div>
-    <div class="flex flex-wrap gap-4">
+    <div class="flex flex-wrap gap-4 justify-center">
         <div class="max-w-sm w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex-shrink-0 rounded overflow-hidden shadow-lg">
             <div class="flex justify-center">
                 <img class=" w-64 h-64 rounded-full content-center" src="images/satria.jpg" alt="Satria">

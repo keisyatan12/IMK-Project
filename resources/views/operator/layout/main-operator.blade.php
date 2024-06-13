@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/@heroicons/react@1.0.5/dist/index.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
     @vite('resources/css/output.css')
     <title>@yield('title')</title>
 </head>
-
 <body>
-    @include('tutor/layout/header')
+        @include('operator/layout/header-operator')
         <div class="flex lg:gap-14">
-            @include('tutor/layout/sidebar')
+            @include('operator/layout/sidebar-operator')
             <div class="w-full flex flex-col md:-ml-72 transition-all ease-in-out" id="main-content">
                 @yield('content')
             </div>
         </div>
-        @include('tutor/layout/footer')
+        @include('operator/layout/footer-operator')
         <script src="{{ asset('script.js') }}"></script>
 </body>
-
 </html>

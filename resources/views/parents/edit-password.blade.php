@@ -1,10 +1,8 @@
-
 @extends('parents.layout.main-parent')
 
 @section('content')
 
 <div class="flex gap-6 lg:gap-14 flex-row relative min-h-screen">
-
     <!-- CONTENT -->
     <div class="my-8 px-4 w-full lg:w-3/4 xl:w-2/3 mx-auto overflow-auto">
         <div class="flex justify-between gap-3 md:items-end md:flex-row flex-col">
@@ -34,15 +32,7 @@
             </div>
         </div>
     </div>
-
 </div>
 
-
-<style>
-    .min-h-screen {
-        min-height: 70vh; /* Mengatur tinggi minimum menjadi 100% dari tinggi viewport */
-    }
-</style>
-
-
 @endsection
+    

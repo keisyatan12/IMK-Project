@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\JobSeekerController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaymentController;
 
@@ -126,6 +127,8 @@ Route::get('/operator-payment', function () {
     return view('/operator/operator-payment');
 });
 
+//Super Admin (Keisya)
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -178,6 +181,27 @@ Route::get('/tutorcriteriainboxdetail', function () {
     return view('/superadmin/tutor-criteria-inbox-detail');
 });
 
+// Superadmin (Denice)
+Route::get('/usermanagementdashboard', function () {
+    return view('/superadmin/usermanagement-edit-operator');
+});
+
+Route::get('/statusallrole', function () {
+    return view('/superadmin/statusallrole');
+});
+
+Route::get('/changepassword', function () {
+    return view('/superadmin/changepassword');
+});
+
+Route::get('/addoperator', function () {
+    return view('/superadmin/addoperator');
+});
+Route::get('/dashboardsup', function () {
+    return view('/superadmin/dashboardsup');
+});
+
+// Tutor
 Route::get('/tutordashboard', function () {
     return view('/tutor/tutor-dashboard');
 });
@@ -197,6 +221,32 @@ Route::get('/tutorprofile', function () {
 Route::get('/tutorprofileedit', function () {
     return view('/tutor/tutor-profile-edit');
 });
+
+// Job seeker
+Route::get('/jobseeker-homedashboard', function () {
+    return view('/JobSeeker/jobseeker-dashboard');
+});
+
+Route::get('/jobseeker-alljob', function () {
+    return view('/JobSeeker/jobseeker-alljob');
+});
+
+Route::get('/jobseeker-history', function () {
+    return view('/JobSeeker/jobseeker-history');
+});
+
+Route::get('/jobseeker-profil', function () {
+    return view('/JobSeeker/jobseeker-profil');
+});
+
+Route::get('/jobseeker-edit-password', function () {
+    return view('/JobSeeker/edit-password-jobseeker');
+});
+
+Route::get('/jobseeker-edit-profil', function () {
+    return view('/JobSeeker/edit-profile-jobseeker');
+});
+
 
 
 
