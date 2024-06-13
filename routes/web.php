@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,29 +36,43 @@ Route::middleware('auth')->group(function () {
 
 
 //naufal
+// Rute untuk menampilkan halaman pembayaran
 Route::get('/parentspayment', function () {
-    return view('parents/payment');
-});
+    return view('parents.payment');
+})->name('parentspayment.show');
+
+// Rute untuk menangani pengiriman form pembayaran
+Route::post('/parentspayment', function () {
+    return redirect()->route('payment-history');
+})->name('parentspayment');
+
+// Rute untuk menampilkan halaman riwayat pembayaran
 Route::get('/paymenthistory', function () {
-    return view('parents/payment-history');
-});
+    return view('parents.payment-history');
+})->name('payment-history');
+
 Route::get('/parentsprofile', function () {
-    return view('parents/profile');
+    return view('parents.profile');
 });
+
+// Rute untuk menampilkan halaman edit profile
 Route::get('/parentsedit', function () {
-    return view('parents/edit-profile');
-});
+    return view('parents.edit-profile');
+})->name('parentsedit');
+
+// Rute untuk menampilkan halaman edit password
 Route::get('/parentspassword', function () {
-    return view('parents/edit-password');
-});
+    return view('parents.edit-password');
+
+})->name('parentspassword');
 Route::get('/jobseekerprofile', function () {
-    return view('Job-Seeker/profile');
+    return view('jobseeker.profile');
 });
 Route::get('/jobseekeredit', function () {
-    return view('Job-Seeker/edit-profile');
+    return view('jobseeker.edit-profile');
 });
 Route::get('/jobseekerpassword', function () {
-    return view('JobSeeker/edit-password');
+    return view('jobseeker.edit-password');
 });
 
 // Parents

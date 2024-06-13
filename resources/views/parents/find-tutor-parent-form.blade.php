@@ -1,6 +1,6 @@
 @extends('parents.layout.main-parent')
 
-@section('title', 'Cari Tutor') 
+@section('title', 'Cari Tutor')
 
 @section('content')
 
